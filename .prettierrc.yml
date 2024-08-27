@@ -1,5 +1,5 @@
 plugins:
-  - "@shopify/prettier-plugin-liquid"
+  - '@shopify/prettier-plugin-liquid'
 semi: false
 singleQuote: true
 trailingComma: es5
