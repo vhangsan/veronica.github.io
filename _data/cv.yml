@@ -4,7 +4,7 @@
     - name: Full Name
       value: Veronica Hangsan
     # - name: Date of Birth
-      # value: 14th March 1879
+    # value: 14th March 1879
     - name: Email
       value: vhangsan@ucdavis.edu
     - name: Languages
@@ -30,7 +30,6 @@
       description:
         - Assisted students and community members with equipment checkouts and answered inquiries related to Craft Center classes and resources.
         - Offered guided tours to walk-in visitors, showcasing the center's facilities and explaining the available equipment.
-
 # - title: Open Source Projects
 #   type: time_table
 #   contents:
