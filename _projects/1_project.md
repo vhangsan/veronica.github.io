@@ -1,7 +1,7 @@
 ---
 layout: page
-title: project 1
-description: with background image
+title: Sentiment Analysis Prediction
+description: Classify book reviews as positive or negative using text classification models.
 img: assets/img/12.jpg
 importance: 1
 category: work
