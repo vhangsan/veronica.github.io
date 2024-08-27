@@ -2,9 +2,9 @@
 layout: page
 permalink: /repositories/
 title: repositories
-description: Some projects that I have worked on.
+description: A collection of my projects.
 nav: true
-nav_order: 4
+nav_order: 2
 ---
 
 <!-- {% if site.data.repositories.github_users %}
