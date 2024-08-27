@@ -3,7 +3,6 @@ name: Deploy site
 on:
   push:
     branches:
-      - master
       - main
     paths:
       - 'assets/**'
@@ -30,7 +29,6 @@ on:
       - '!README.md'
   pull_request:
     branches:
-      - master
       - main
     paths:
       - 'assets/**'
@@ -62,11 +60,25 @@ permissions:
 
 jobs:
   deploy:
-    # available images: https://github.com/actions/runner-images#available-images
     runs-on: ubuntu-latest
     steps:
       - name: Checkout 🛎️
         uses: actions/checkout@v4
+        with:
+          repository: vhangsan/veronica.github.io
+          ref: main
+          token: ${{ secrets.GITHUB_TOKEN }}  # Add this line to include the token
+          ssh-strict: true
+          ssh-user: git
+          persist-credentials: true
+          clean: true
+          sparse-checkout-cone-mode: true
+          fetch-depth: 1
+          fetch-tags: false
+          show-progress: true
+          lfs: false
+          submodules: false
+          set-safe-directory: true
       - name: Setup Ruby
         uses: ruby/setup-ruby@v1
         with:
@@ -94,3 +106,11 @@ jobs:
         with:
           token: ${{ secrets.GITHUB_TOKEN }}
           folder: _site
+    env:
+      URLS: https://veronica.github.io/
+      TOKEN_NAME: ${{ secrets.LIGHTHOUSE_BADGER_TOKEN }}
+      REPO_BRANCH: "${{ github.repository }} main"
+      MOBILE_LIGHTHOUSE_PARAMS: --only-categories=performance,accessibility,best-practices,seo --throttling.cpuSlowdownMultiplier=2
+      DESKTOP_LIGHTHOUSE_PARAMS: --only-categories=performance,accessibility,best-practices,seo --preset=desktop --throttling.cpuSlowdownMultiplier=1
+      REPOSITORY: vhangsan/veronica.github.io
+      BRANCH: main
