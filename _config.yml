@@ -124,6 +124,7 @@ permalink: /blog/:year/:title/
 lsi: false # produce an index for related posts
 
 # Pagination
+layout: default
 pagination:
   enabled: true
 
