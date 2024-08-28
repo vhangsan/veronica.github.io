@@ -3,6 +3,7 @@ source 'https://rubygems.org'
 gem "jekyll", "~> 4.3.3"
 
 group :jekyll_plugins do
+  gem "liquid", "~> 4.0"
   gem "classifier-reborn", "~> 2.3.0"
   gem "jekyll-archives", "~> 2.2.1"
   gem "jekyll-email-protect", "~> 1.1.0"

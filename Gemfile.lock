@@ -294,6 +294,7 @@ DEPENDENCIES
   json-minify (~> 0.0.3)
   latex-decode (~> 0.4.0)
   libv8-node (~> 22.5.1.0)
+  liquid (~> 4.0)
   loofah (~> 2.22.0)
   mercenary (~> 0.4.0)
   mini_mime (~> 1.1.5)
