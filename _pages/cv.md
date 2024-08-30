@@ -9,3 +9,7 @@ description: This is a description of the page. You can modify it in '_pages/cv.
 # toc:
 #   sidebar: none
 ---
+
+# My CV
+
+You can [download my CV here](/assets/pdf/Veronica_Hangsan.pdf).
