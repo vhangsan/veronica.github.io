@@ -5,8 +5,9 @@ layout: default
   <article>
     <embed
       src='{{ page.cv_pdf | prepend: 'assets/pdf/' | relative_url}}'
-      width='{{ site.max_width }}'
+      width='100%'
       height='1200px'
+      type='application/pdf'
     >
   </article>
 </div>
