@@ -4,6 +4,7 @@ gem 'csv'
 gem 'observer'
 
 group :jekyll_plugins do
+    gem 'activesupport'
     gem 'jekyll'
     gem 'jekyll-archives'
     gem 'jekyll-diagrams'
